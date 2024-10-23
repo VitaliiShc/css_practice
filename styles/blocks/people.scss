@@ -1,0 +1,19 @@
+@use './styles/_variables/variables';
+
+.people {
+  --column-count: 2;
+
+  padding: 30px 55px;
+
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 200px);
+  place-content: center center;
+  justify-items: center;
+  gap: 40px 30px;
+}
+
+@media (min-width: 1000px) {
+  .people {
+    --column-count: 4;
+  }
+}
