@@ -37,10 +37,9 @@ html {
 .person {
   border-radius: 10px;
   width: 220px;
-  height: 287px;
+  min-height: 287px;
   padding: 10px 10px 16px;
-  transition-property: transform;
-  transition-duration: 5s;
+  transition: transform 1s;
 }
 
 .person__photo {
@@ -49,11 +48,10 @@ html {
 }
 
 .person__photo__img {
-  border-radius: 200px;
+  border-radius: 50%;
   width: 100%;
   height: 100%;
-  transition-property: border-radius;
-  transition-duration: 5s;
+  transition: border-radius 1s;
 }
 
 .person__photo__rank {
@@ -122,6 +120,6 @@ html {
 }
 
 .person:hover .person__photo__img {
-  border-radius: 60px;
+  border-radius: 25%;
 }
 /*# sourceMappingURL=index.b1276d39.css.map */
